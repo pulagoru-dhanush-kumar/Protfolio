@@ -1,0 +1,215 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f2e1; /* Lighter beige background */
+    color: #333; /* Darker text for readability */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #D2B48C; /* Tan */
+    width: 100%;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #5C4033; /* Deep brown */
+}
+
+.header-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header-links p {
+    margin: 0;
+}
+
+.header-links a {
+    color: #5C4033; /* Deep brown */
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px; /* Padding for clickable area */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.header-links i {
+    color: #5C4033;
+    font-size: 1.5rem;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 200px; /* Reduced sidebar width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #2C2C2C; /* Black background for sidebar */
+    padding: 15px; /* Reduced padding */
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Shadow to add depth */
+    overflow-y: auto; /* Add vertical scroll */
+}
+
+#sidebar ul li {
+    margin: 15px 0; /* Reduced margin for more compactness */
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Reduced font size */
+    padding: 12px 18px; /* Reduced padding */
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#sidebar ul li a:hover {
+    background-color: #333; /* Black background on hover */
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Special styles for "Connect With Me" link */
+#sidebar ul li a:last-child {
+    background-color: #333; /* Darker background color */
+    margin-top: auto; /* Push this section to the bottom */
+    font-weight: bold;
+}
+
+#sidebar ul li a:last-child:hover {
+    background-color: #8b5e3c; /* Different hover color */
+}
+
+/* Content Area */
+#content {
+    margin-left: 220px; /* Adjusted margin for the new sidebar width */
+    padding: 20px;
+    background-color: #f4e1c1;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #5C4033;
+    border-bottom: 2px solid #D2B48C;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Button styles for subsections */
+.subsection-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5C4033;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: #e1b77d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.subsection-title:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: #cfa768;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D2B48C;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* LinkedIn, GitHub, and Resume link hover animation */
+.header-links a:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for added effect */
+}
+
+/* LinkedIn and GitHub icon animation */
+.header-links a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header-links a:hover i {
+    transform: rotate(360deg); /* Rotate the icon on hover */
+    color: #ff5e57; /* Change icon color on hover */
+}
+/* Emoji Styling */
+/* Emoji Styling */
+.emoji {
+    font-size: 2rem;
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    transition: all 0.5s ease-out;
+}
+
+/* Emoji Animation */
+.emoji-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
