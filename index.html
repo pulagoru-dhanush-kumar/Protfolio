@@ -1,154 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dhanush Kumar Pulagoru — QA Engineer & Java Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/LinkedIn_icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanush Kumar Pulagoru — Java Developer & QA Engineer</title>
+  <meta name="description" content="Java Developer & QA Engineer specializing in Spring Boot, REST APIs, and comprehensive testing solutions.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-  <aside id="sidebar">
-    <img id="avatar" src="Dhanush_image.jpeg" alt="Dhanush Kumar Photo" class="avatar"/>
-    <h3 class="small-name">Dhanush Kumar Pulagoru</h3>
-    <p class="role">QA Engineer • Java / Spring Boot Developer</p>
-    <p class="location small-location">Hyderabad, India</p>
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="grid-overlay"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
 
-    <nav>
-      <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">DHANUSH KUMAR PULAGORU<span class="logo-dot"></span></span>
+      </div>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-nav="experience">Experience</a></li>
+        <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
       </ul>
-    </nav>
-
-    <div class="social">
-      <a href="https://www.linkedin.com/in/dhanush-kumar-840242212" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/pulagoru-dhanush-kumar" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://leetcode.com/u/20pa1a05d2/" target="_blank" class="leetcode-link">LeetCode</a>
-    </div>
-    <div class="resume-actions">
-      <a class="btn-resume" href="resume_dhanush.pdf" download>Download Resume</a>
-      <a class="btn-view" href="resume_dhanush.pdf" target="_blank">View Resume</a>
-    </div>
-  </aside>
-
-  <main id="content">
-    <header class="top-header">
-      <div>
-        <h1 id="name">Dhanush Kumar Pulagoru</h1>
-        <p class="location">Hyderabad, India</p>
-        <p class="tagline">QA Engineer • Java / Spring Boot Developer • Freelance available</p>
+      
+      <div class="nav-actions">
+        <a href="resume_dhanush.pdf" class="btn-resume" download>
+          <i class="fas fa-download"></i>
+          <span>Resume</span>
+        </a>
       </div>
-      <div class="contact-inline">
-        <div class="email-copy">
-          <a id="emailLink" href="mailto:dhanushpulagoru@gmail.com" target="_self" onclick="window.location.href='mailto:dhanushpulagoru@gmail.com'; return false;"><i class="fas fa-envelope"></i> dhanushpulagoru@gmail.com</a>
-          <button id="copyEmail" title="Copy email"><i class="fas fa-clipboard"></i></button>
-        </div>
-        <a href="tel:+916304030341"><i class="fas fa-phone"></i> +91 6304030341</a>
-      </div>
-    </header>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section id="summary">
-      <h2 class="subsection-title">Professional Summary</h2>
-      <p>
-        QA Engineer with 1 year of hands-on experience testing cashback platforms integrated with providers such as Admitad, Cuelinks, Impact, Rakuten and more. 
-        Experienced in API testing, analytics validation, DB verification, functional & regression testing, and basic UI automation with Playwright. 
-        Also a backend Java developer with Spring Boot experience (REST APIs, Data JPA, MySQL). Open to freelancing opportunities on Upwork for QA and Java/Spring Boot projects.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2 class="subsection-title">Experience</h2>
-      <div class="job">
-        <div class="job-header">
-          <img src="Santabrowser.jpg" alt="Santa Browser" class="company-logo" />
-          <div>
-            <h3>Quality Analyst — <a href="https://www.santabrowser.com/" target="_blank" class="company-link">Santa Browser</a></h3>
-            <p class="job-meta">Feb 2025 – Present · Hyderabad, India</p>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-reveal>
+            <i class="fas fa-code"></i>
+            <span>Java Backend Developer • Spring Boot</span>
+          </div>
+          
+          <h1 class="hero-title" data-reveal>
+            <span class="title-line">Building Scalable</span>
+            <span class="title-line gradient-text">Backend Solutions</span>
+            <span class="title-line">with Quality Focus</span>
+          </h1>
+          
+         <p class="hero-description" data-reveal>
+  QA Engineer transitioning to Java Backend Development, specializing in Spring Boot, REST APIs, and AWS cloud deployment. 
+  Building production-ready applications by combining rigorous testing expertise with backend development skills and a quality-first mindset.
+</p>
+          
+          <div class="hero-actions" data-reveal>
+            <a href="#featured-project" class="btn btn-primary">
+              <span>View Featured Project</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+          
+          <div class="hero-stats" data-reveal>
+            <div class="stat-item">
+              <div class="stat-number" data-count="1">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="25">0</div>
+              <div class="stat-label">API Endpoints Built</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="7">0</div>
+              <div class="stat-label">Provider Integrations</div>
+            </div>
           </div>
         </div>
-        <ul>
-          <li>Tracked defects and managed test cases using JIRA across releases.</li>
-          <li>Validated analytics & telemetry using Requestly and Charles Proxy to ensure correct event firing and payload accuracy.</li>
-          <li>Performed API testing with Postman for cashback eligibility, calculations, wallet updates, refunds, and cancellations.</li>
-          <li>Verified cashback creation and reconciliation via Enacton Dashboard for providers including Admitad, Cuelinks, Ecomnia, CJ, Rakuten, Impact and Partnerize.</li>
-          <li>Executed SQL queries for transaction validation, cashback status checks, and backend data integrity.</li>
-          <li>Automated repetitive UI/browser scenarios with Playwright to increase regression coverage.</li>
-          <li>Tested push notifications across Android and Desktop for correct triggers and delivery timing.</li>
-        </ul>
+        
+        <div class="hero-visual" data-reveal>
+          <div class="visual-card glass-card">
+            <div class="card-glow"></div>
+            <img src="Dhanush_image.jpeg" alt="Dhanush Kumar Pulagoru" class="hero-image">
+            <div class="image-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>Open to Work</span>
+            </div>
+          </div>
+          
+          <div class="floating-tech">
+            <div class="tech-badge" style="--delay: 0s">
+              <i class="fab fa-java"></i>
+            </div>
+            <div class="tech-badge" style="--delay: 0.2s">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="tech-badge" style="--delay: 0.4s">
+              <i class="fab fa-aws"></i>
+            </div>
+            <div class="tech-badge" style="--delay: 0.6s">
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
       </div>
     </section>
 
-    <section id="projects">
-      <h2 class="subsection-title">Projects</h2>
+    <!-- Featured Project - Dairy Platform -->
+    <section class="featured-project" id="featured-project">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-badge">
+            <i class="fas fa-star"></i>
+            Featured Project
+          </span>
+          <h2 class="section-title">Dairy E-Commerce Platform</h2>
+          <p class="section-subtitle">Production-ready Spring Boot backend with AWS deployment</p>
+        </div>
+        
+        <div class="featured-content">
+          <div class="featured-showcase" data-reveal>
+            <div class="showcase-card glass-card">
+              <div class="showcase-header">
+                <div class="project-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-meta">
+                  <div class="project-status">
+                    <span class="status-dot"></span>
+                    <span>Production Ready</span>
+                  </div>
+                  <div class="project-date">Jan 2026 – Mar 2026</div>
+                </div>
+              </div>
+              
+              <div class="showcase-body">
+               <h3>Role: Backend Development & AWS Deployment</h3>
+                <p>Engineered a comprehensive Spring Boot backend for a dairy e-commerce platform, featuring secure authentication, payment integration, and scalable AWS infrastructure.</p>
+                
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Spring Security + JWT</h4>
+                      <p>Stateless authentication with BCrypt hashing</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>AWS Deployment</h4>
+                      <p>EC2 + RDS MySQL with manual deployment strategy</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="feature-content">
+                     <h4>Payment Gateway</h4>
+<p>Razorpay test API integration for secure transactions</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Relational Schema</h4>
+                      <p>8-table normalized database design</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tech-stack">
+                  <span class="tech-tag">Java 17</span>
+                  <span class="tech-tag">Spring Boot 3.2</span>
+                  <span class="tech-tag">Spring Security</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Hibernate/JPA</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">AWS EC2</span>
+                  <span class="tech-tag">AWS RDS</span>
+                </div>
+                
+                <div class="project-links">
+                  <a href="https://tinyurl.com/messiah-vijaya-dairy-pulagoru" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/pulagoru-dhanush-kumar/vijaya-dairy" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="featured-details" data-reveal>
+            <div class="detail-card glass-card">
+              <div class="detail-header">
+                <i class="fas fa-code-branch"></i>
+                <h4>Architecture Highlights</h4>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span><strong>25+ REST API Endpoints</strong> covering product management, user authentication, cart operations, order lifecycle, and admin controls</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span><strong>Git Branching Strategy</strong> with Dev/Staging/Production environments for safe deployment</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span><strong>OTP Registration</strong> via Gmail SMTP for secure user onboarding</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span><strong>Admin Panel</strong> with product CRUD, inventory filters, and order lifecycle management</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span><strong>Comprehensive Testing</strong> ensuring data integrity and API reliability</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="detail-card glass-card">
+              <div class="detail-header">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Key Achievements</h4>
+              </div>
+              <ul class="achievement-list">
+                <li>
+                  <div class="achievement-icon">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <strong>Production Deployment</strong>
+                    <p>Successfully deployed on AWS with high availability</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="achievement-icon">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <strong>Security First</strong>
+                    <p>Implemented industry-standard authentication & encryption</p>
+                  </div>
+                </li>
 
-      <article class="project">
-        <h3>Online Mobile Booking Store</h3>
-        <p>Full-stack e-commerce site built with HTML5, CSS3, JavaScript, Java Servlets, JSP, and SQL. Designed database models for customers, inventory, and orders; implemented responsive UI and cart features.</p>
-        <p>Links: <a href="https://github.com/pulagoru-dhanush-kumar/OnlineMobileBookingStore" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/posts/dhanush-kumar-840242212_online-mobile-booking-store-full-stack-activity-7283364549364260864-qUZu" target="_blank">Demo</a></p>
-      </article>
-
-      <article class="project">
-        <h3>Weather Application</h3>
-        <p>Weather app using OpenWeatherMap API with favorites stored in localStorage, robust error handling, and responsive UI.</p>
-        <p>Links: <a href="https://github.com/pulagoru-dhanush-kumar/WeatherApplication" target="_blank">GitHub</a> · <a href="https://pulagoru-dhanush-kumar.github.io/WeatherApplication/" target="_blank">Live Demo</a></p>
-      </article>
+                <li>
+                  <div class="achievement-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <strong>Scalable Architecture</strong>
+                    <p>Built with growth in mind using Spring Boot best practices</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2 class="subsection-title">Skills</h2>
-      <ul class="skills-list">
-        <li><strong>QA & Testing:</strong> API Testing (Postman), Analytics/Telemetry validation (Requestly, Charles Proxy), JIRA, Test Case Management, Playwright (UI automation)</li>
-        <li><strong>Backend:</strong> Java, Spring Boot (REST APIs, Spring Core, Data JPA), Hibernate, MySQL</li>
-        <li><strong>Dev Tools & Analytics:</strong> Git, Superset, Redash</li>
-        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
-      </ul>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content" data-reveal>
+            <span class="section-badge">
+              <i class="fas fa-user"></i>
+              About Me
+            </span>
+            <h2 class="section-title">Building Quality-Driven Applications</h2>
+            <p class="about-text">
+              I'm a <strong>QA Engineer with 1 year of hands-on experience</strong> testing cashback platforms integrated with providers like Admitad, Cuelinks, Impact, and Rakuten. My expertise spans API testing, analytics validation, database verification, functional & regression testing, and UI automation with Playwright.
+            </p>
+            <p class="about-text">
+              As a <strong>backend Java developer</strong>, I specialize in building REST APIs with Spring Boot, working with MySQL databases, and deploying applications on AWS. My QA background enables me to write code that's inherently testable and robust from the ground up.
+            </p>
+            <p class="about-text">
+              Currently seeking opportunities as a <strong>Java / Spring Boot Developer</strong> and open to freelancing on Upwork for QA and backend development projects.
+            </p>
+
+            <div class="about-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hyderabad, India</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:dhanushpulagoru@gmail.com">dhanushpulagoru@gmail.com</a>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+916304030341">+91 6304030341</a>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/dhanush-kumar-840242212" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/pulagoru-dhanush-kumar" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/u/20pa1a05d2/" target="_blank" class="social-link">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="about-cards">
+            <div class="info-card glass-card" data-reveal style="--delay: 0.1s">
+              <div class="card-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Professional Focus</h3>
+              <p>Transitioning from QA to full-time backend development, bringing quality assurance principles to every line of code.</p>
+            </div>
+            
+            <div class="info-card glass-card" data-reveal style="--delay: 0.2s">
+              <div class="card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Education</h3>
+              <p>B.Tech in Computer Science from Vishnu Institute of Technology with 8.19 CGPA (2020-2024).</p>
+            </div>
+            
+            <div class="info-card glass-card" data-reveal style="--delay: 0.3s">
+              <div class="card-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Certifications</h3>
+              <p>Java & SQL (HackerRank), PCAP Python Programming (CISCO Networking Academy).</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="education">
-      <h2 class="subsection-title">Education</h2>
-      <ul>
-        <li><strong>Vishnu Institute Of Technology</strong> — B.Tech, Computer Science and Engineering (2020–2024) · CGPA: 8.19</li>
-        <li><strong>Sri Chaitanya Junior College</strong> — Higher Secondary (2018–2020) · CGPA: 9.11</li>
-        <li><strong>Challapalli E.M High School</strong> — Secondary (2017–2018) · CGPA: 9.7</li>
-      </ul>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-badge">
+            <i class="fas fa-folder-open"></i>
+            Portfolio
+          </span>
+          <h2 class="section-title">Other Projects</h2>
+          <p class="section-subtitle">Exploring different technologies and building practical solutions</p>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card glass-card" data-reveal>
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="project-links-small">
+                <a href="https://github.com/pulagoru-dhanush-kumar/OnlineMobileBookingStore" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/posts/dhanush-kumar-840242212_online-mobile-booking-store-full-stack-activity-7283364549364260864-qUZu" target="_blank" title="Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Online Mobile Booking Store</h3>
+            <p>Full-stack e-commerce application for mobile booking with Java Servlets, JSP, and MySQL. Features server-side rendering, JDBC operations, responsive frontend, and complete cart functionality.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Java Servlets</span>
+              <span class="tech-tag">JSP</span>
+              <span class="tech-tag">JDBC</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+          
+          <div class="project-card glass-card" data-reveal>
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="project-links-small">
+                <a href="https://github.com/pulagoru-dhanush-kumar/WeatherApplication" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://pulagoru-dhanush-kumar.github.io/WeatherApplication/" target="_blank" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Weather Application</h3>
+            <p>JavaScript weather app consuming OpenWeatherMap API with localStorage-based favorites, robust error handling, and responsive interface. Live-deployed on GitHub Pages.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">OpenWeatherMap API</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">localStorage</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="certifications">
-      <h2 class="subsection-title">Certifications</h2>
-      <ul>
-        <li>Java Certification — HackerRank</li>
-        <li>SQL Certification (Basic & Intermediate) — HackerRank</li>
-        <li>PCAP: Programming Essentials in Python — CISCO</li>
-      </ul>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-badge">
+            <i class="fas fa-briefcase"></i>
+            Career
+          </span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Professional journey in QA and development</p>
+        </div>
+        
+        <div class="experience-timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="experience-header">
+                <div class="company-logo">
+                  <img src="Santabrowser.jpg" alt="Santa Browser">
+                </div>
+                <div class="experience-info">
+                  <h3>Quality Analyst</h3>
+                  <a href="https://www.santabrowser.com/" target="_blank" class="company-name">
+                    Santa Browser
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <div class="experience-meta">
+                    <span class="date">
+                      <i class="fas fa-calendar"></i>
+                      Feb 2025 – Present
+                    </span>
+                    <span class="location">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Hyderabad, India
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="experience-description">
+                <h4>Key Responsibilities & Achievements:</h4>
+                <ul class="responsibility-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Managed defect lifecycle in JIRA and tracked test cases across multiple releases</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Performed API testing with Postman across <strong>30+ endpoints</strong> for cashback eligibility, calculations, wallet updates, and cancellations</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Built Java REST API automation suite with <strong>RestAssured</strong> for cashback sales and user reward API validations</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Executed SQL queries in MySQL for transaction validation, cashback status checks, and data integrity testing</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Validated analytics & telemetry using Requestly and Charles Proxy to ensure correct event firing and payload accuracy</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified cashback creation & reconciliation via Enacton Dashboard for <strong>7+ providers</strong>: Admitad, Cuelinks, Ecomnia, CJ, Rakuten, Impact, Partnerize</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Validated deep linking workflows and AppsFlyer event tracking for accurate attribution</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                  <span>Validated blockchain wallet transactions and core browser features</span>
+</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Monitored key metrics using Superset and Redash dashboards</span>
+                  </li>
+                </ul>
+                
+                <div class="tech-stack">
+                  <span class="tech-tag">JIRA</span>
+                  <span class="tech-tag">Postman</span>
+                  <span class="tech-tag">RestAssured</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Playwright</span>
+                  <span class="tech-tag">AppsFlyer</span>
+                  <span class="tech-tag">Requestly</span>
+                  <span class="tech-tag">Charles Proxy</span>
+                  <span class="tech-tag">Superset</span>
+                  <span class="tech-tag">Redash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2 class="subsection-title">Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:dhanushpulagoru@gmail.com" target="_self" onclick="window.location.href='mailto:dhanushpulagoru@gmail.com'; return false;">dhanushpulagoru@gmail.com</a></li>
-        <li>Phone: <a href="tel:+916304030341">+91 6304030341</a></li>
-        <li>Address: 1/124 Kotha Majeru, Andhra Pradesh 521131, India</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/dhanush-kumar-840242212" target="_blank">dhanush-kumar-840242212</a></li>
-        <li>GitHub: <a href="https://github.com/pulagoru-dhanush-kumar" target="_blank">pulagoru-dhanush-kumar</a></li>
-        <li>LeetCode: <a href="https://leetcode.com/u/20pa1a05d2/" target="_blank">20pa1a05d2</a></li>
-      </ul>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-badge">
+            <i class="fas fa-tools"></i>
+            Expertise
+          </span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Comprehensive tech stack for backend development & QA</p>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Spring Security</span>
+              <span class="skill-tag">Spring Core</span>
+              <span class="skill-tag">Spring Data JPA</span>
+              <span class="skill-tag">Hibernate</span>
+              <span class="skill-tag">REST API Design</span>
+              <span class="skill-tag">JWT</span>
+              <span class="skill-tag">BCrypt</span>
+              <span class="skill-tag">OTP/Gmail SMTP</span>
+            </div>
+          </div>
+          
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Database</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQL Queries</span>
+              <span class="skill-tag">Schema Design</span>
+              <span class="skill-tag">JDBC</span>
+              <span class="skill-tag">Transaction Validation</span>
+              <span class="skill-tag">Data Integrity Testing</span>
+            </div>
+          </div>
+          
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">AWS EC2</span>
+              <span class="skill-tag">AWS RDS</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">Git Branching Strategy</span>
+              <span class="skill-tag">GitHub Pages</span>
+            </div>
+          </div>
+          
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-bug"></i>
+              </div>
+              <h3>QA & Test Automation</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">RestAssured (Java)</span>
+              <span class="skill-tag">Playwright</span>
+              <span class="skill-tag">JIRA</span>
+              <span class="skill-tag">Manual Testing</span>
+              <span class="skill-tag">Functional Testing</span>
+              <span class="skill-tag">Regression Testing</span>
+              <span class="skill-tag">API Testing</span>
+              <span class="skill-tag">Database Testing</span>
+              <span class="skill-tag">Requestly</span>
+              <span class="skill-tag">Charles Proxy</span>
+            </div>
+          </div>
+          
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3>Analytics & Integrations</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">AppsFlyer</span>
+              <span class="skill-tag">Superset</span>
+              <span class="skill-tag">Redash</span>
+              <span class="skill-tag">Enacton Dashboard</span>
+              <span class="skill-tag">Deep Linking</span>
+              <span class="skill-tag">Telemetry Validation</span>
+              <span class="skill-tag">Push Notifications</span>
+            </div>
+          </div>
+          
+          <div class="skill-category glass-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Frontend & Other</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            
+              <span class="skill-tag">JSP</span>
+             
+              <span class="skill-tag">DSA (Java)</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; 2026 Pulagoru Dhanush Kumar. All rights reserved.</p>
-    </footer>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info" data-reveal>
+            <span class="section-badge">
+              <i class="fas fa-paper-plane"></i>
+              Get in Touch
+            </span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-description">
+              I'm currently seeking opportunities as a Java / Spring Boot Developer and open to freelancing projects. 
+              Whether you have a project in mind or just want to connect, I'd love to hear from you!
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method glass-card">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Email</h4>
+                  <a href="mailto:dhanushpulagoru@gmail.com" id="emailLink">dhanushpulagoru@gmail.com</a>
+                  <button class="copy-btn" id="copyEmail" title="Copy email">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="contact-method glass-card">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Phone</h4>
+                  <a href="tel:+916304030341">+91 6304030341</a>
+                </div>
+              </div>
+              
+              <div class="contact-method glass-card">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Location</h4>
+                  <p>Hyderabad, India</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-social">
+              <h4>Connect on Social</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/dhanush-kumar-840242212" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/pulagoru-dhanush-kumar" target="_blank" class="social-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://leetcode.com/u/20pa1a05d2/" target="_blank" class="social-link">
+                  <i class="fas fa-code"></i>
+                  <span>LeetCode</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-visual" data-reveal>
+            <div class="visual-card glass-card">
+              <div class="resume-preview">
+                <div class="preview-icon">
+                  <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>Resume / CV</h3>
+                <p>Download my detailed resume to learn more about my experience and skills</p>
+                <div class="resume-actions">
+                  <a href="resume_dhanush.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                  </a>
+                  <a href="resume_dhanush.pdf" class="btn btn-outline" target="_blank">
+                    <i class="fas fa-eye"></i>
+                    <span>View Online</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  </div><!-- .container -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <span class="logo-text">DHANUSH KUMAR PULAGORU<span class="logo-dot"></span></span>
+          </div>
+          <p>Building quality-driven backend solutions with Java & Spring Boot</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/dhanush-kumar-840242212" target="_blank">LinkedIn</a></li>
+              <li><a href="https://github.com/pulagoru-dhanush-kumar" target="_blank">GitHub</a></li>
+              <li><a href="https://leetcode.com/u/20pa1a05d2/" target="_blank">LeetCode</a></li>
+              <li><a href="mailto:dhanushpulagoru@gmail.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dhanush Kumar Pulagoru. All rights reserved.</p>
+        <p>Designed & Developed with <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
